@@ -1,0 +1,4 @@
+  Using the system host file, inject the ip address and the site name in order
+to block out certain websites during certain times of the day. The app will
+run as a background process and will routinely check the time to inject ip
+addresses onto the hosts file. 
