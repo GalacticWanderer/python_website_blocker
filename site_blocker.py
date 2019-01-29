@@ -1,2 +1,3 @@
 # a string to hold the address to the hosts file
-hostAddress = ""
+hostAddress = "/ect/hosts"
+print(hostAddress)
