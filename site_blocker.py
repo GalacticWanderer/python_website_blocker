@@ -1,5 +1,4 @@
 import time  # for sleep functionality
-import re
 from datetime import datetime as dt  # for system date and time
 
 # vars to hold host file address, redirect ip and a list of sites to block
@@ -19,7 +18,7 @@ while True:
         print("working hours")
 
         #  opening up the hosts file as read and writeable and reading the file
-        with open(tempHostAddress, 'r+') as file:
+        with open(hostAddress, 'r+') as file:
             contents = file.read()
             # loop through the website_list and see if it exits on file
             for site in website_list:
@@ -34,7 +33,7 @@ while True:
     else:
         print("non working hours")
         #  opening the file
-        with open(tempHostAddress, 'r+') as file:
+        with open(hostAddress, 'r+') as file:
             # reading the file as individual lines instead
             contents = file.readlines()
             # moving the pointer to the beginning to the line so we can append
